@@ -1,0 +1,57 @@
+@import '../../Utilities/variables.scss';
+
+header{
+    width: 100%;
+    position: fixed;
+    padding: 0rem 0.5rem;
+    z-index: 3;
+    background-color: $white;
+
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0rem 1rem;
+        padding: 0;
+        &.logo::after{
+            content: ".";
+            color: $primary-color;
+        }
+        &.logo:hover{
+            color: $tertiary-color;
+        }
+    }
+    
+    .navbar-nav .nav-item .active{
+        margin: 0rem 1rem;
+    }
+
+    .navbar-nav .nav-item .active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, $secondary-color 50%, $primary-color 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    .navbar-nav .nav-item .active:hover::after {
+        background-position: left bottom;
+    }
+    
+    
+}
+
+@media (min-width: 700px) {
+    header{
+        padding: 0rem 13rem;
+        .logo{
+            font-size: 3.5rem;
+       }
+   }
+   
+}

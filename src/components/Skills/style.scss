@@ -1,0 +1,43 @@
+@import '../../Utilities/variables.scss';
+
+
+.skills-container{
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 4rem;
+    
+    h2{
+        font-family: Bebas Neue, sans-serif;
+        font-size: 3rem;
+        text-align: left;
+        padding: 4rem 2rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem 2rem;
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+
+    i{
+        font-size: 4rem;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .skills-container .grid{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0rem 10rem;
+    }
+    .skills-container h2{
+        padding-left: 15rem;
+    }
+}
+

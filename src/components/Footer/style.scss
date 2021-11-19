@@ -1,0 +1,10 @@
+@import '../../Utilities/variables.scss';
+
+footer{
+    background-color: $gray;
+    height: 5rem;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

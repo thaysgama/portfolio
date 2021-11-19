@@ -1,0 +1,25 @@
+@import '../../Utilities/variables.scss';
+
+
+#projects::before {
+    content: '';
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+}
+
+.projects{
+    h2{
+        font-family: Bebas Neue, sans-serif;
+        font-size: 3rem;
+        text-align: left;
+        padding: 2rem 2rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .projects h2{
+        padding-left: 15rem;
+    }
+}

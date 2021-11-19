@@ -1,0 +1,122 @@
+@import '../src/Utilities/variables.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+.dark-mode{
+  background-color: $gray;
+  color: $white;
+  header{
+    background-color: $gray;
+    .logo, 
+    .navbar-nav .nav-item .active{
+      color: $white;
+    }
+  }
+  .about-container::after,
+  .about-container::before{
+    background: url('./assets/waves-1200x300-gray.svg');
+  }
+  .banner .btn{
+    background: linear-gradient(to right, $secondary-color 50%, $primary-color 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    color: $white;
+    border: none;
+    &:hover {
+      background-position: left bottom;
+    }
+  }
+}
+
+
+
+.btn-dark-mode{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 5;
+
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .label-dark  {
+    width: 3.5rem;
+    height: 2rem;
+    background-color: $gray;
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 1rem $gray;
+    cursor: pointer;
+  }
+  .label-dark::after {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: $white;
+    position: absolute;
+    border-radius: 1rem;
+    top: 0.4rem;
+    left: 0.4rem;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + .label-dark::after {
+    left: calc(100% - 1.6rem);
+    background-color: $gray;
+  }
+  
+  input[type="checkbox"]:checked + .label-dark  {
+    background-color: $white;
+  }
+  
+  svg{
+    position: absolute;
+    z-index: 5;
+    transform: translateY(50%);
+  }
+  
+  .bi-moon-fill{
+    right: 0.5rem;
+    color: $white;
+  }
+  
+  .bi-brightness-high-fill{
+    left: 0.5rem;
+    opacity: 0;
+    color: $gray;
+  }
+  
+  input[type="checkbox"]:checked ~ label .bi-moon-fill{
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked ~ label .bi-brightness-high-fill{
+    opacity: 1;
+  }
+
+}

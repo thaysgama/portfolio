@@ -1,0 +1,73 @@
+@import '../../Utilities/variables.scss';
+
+.about-container::after,
+.about-container::before{
+    background: url('../../assets/waves-1200x300.svg');
+    aspect-ratio: 12 / 2;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    content: '';
+    background-size: cover;
+}
+
+.about-container::after{
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: -1px;
+}
+
+.about-container::before{
+    position: absolute;
+    top: -10px;
+}
+
+
+.about-container{
+    position: relative;
+    background: url('../../assets/AnimatedShape2.svg');
+    min-height: 140vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    background-attachment: fixed;
+
+    #about{
+        position: absolute;
+        top: 120px;
+        content: '';
+        display: block;
+        visibility: hidden;
+    }
+
+    .about-text{
+        color: $white;
+        max-width: 800px;
+        text-align: left;
+        padding: 0rem 2rem;
+        h2{
+            font-family: Bebas Neue, sans-serif;
+            font-size: 3rem;
+        }
+        
+        p{
+            font-size: 1rem;
+        }
+    
+        i{
+            font-size: 3.5rem;
+            padding: 2rem;
+            color: $white;
+            &:hover{
+                color: $gray;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .about-container .about-text{
+        padding-left: 13rem;
+   }
+   
+}

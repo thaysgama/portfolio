@@ -1,0 +1,73 @@
+@import '../../Utilities/variables.scss';
+
+.banner{
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+    padding: 0rem 1rem 4rem;
+    flex-wrap: wrap;
+    position: relative;
+    
+
+    .hello{
+        font-family: Bebas Neue, sans-serif;
+        font-size: 5.5rem;
+    }
+
+    .text{
+        padding: 8rem 0rem 4rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        background: linear-gradient(to right, $primary-color 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        line-height: 3;
+        padding: 0 2rem;
+        margin: 1rem;
+        font-weight: 500;
+        &:hover {
+            background-position: left bottom;
+            color: white;
+            border-color: $primary-color;
+        }
+    }
+    
+
+    .image{
+        background-image:  url('../../assets/blob.svg'),url('../../assets/profile-photo.png'),;
+        background-blend-mode: color;
+        padding: 1rem;
+        height: 55vh;
+        width: 55vh;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain;
+        background-position:  center;
+        mask-image: url('../../assets/blob.svg');
+        mask-position: center;    
+    }
+    .img-shadow{
+        filter: drop-shadow(0px 10px 10px $grayTransparent);
+    }
+  
+}
+
+
+@media (min-width: 700px) {
+    .banner{
+        padding: 4rem 3rem 1rem;
+
+        .image{
+            height: 60vh;
+            width: 60vh;
+        }
+    }
+
+    
+}
+
