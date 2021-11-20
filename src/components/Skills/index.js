@@ -3,7 +3,8 @@ import './style.scss'
 function Skills(){
 
     return (
-      <div className="skills-container">
+      <div className="skills-container" data-aos="fade-up"
+      data-aos-duration="1500">
         <h2>
           Skills / tools
         </h2>

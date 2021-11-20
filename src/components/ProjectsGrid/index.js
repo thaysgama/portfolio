@@ -52,12 +52,39 @@ function ProjectsGrid(){
     }, {
         id: 106,
         name: 'Dentist Registation',
-        tag: 'Pair Work',
+        tag: 'Individual Work',
         tools: 'Java and Maven',
         website:false,
         gitHubUrl: 'https://github.com/thaysgama/dh-backend-checkpointI',
         websiteUrl: '', 
         bg: 'gradient-2'
+    },{ 
+        id: 107,
+        name: 'Netflix Clone',
+        tag: 'Individual Work',
+        tools: 'Html, CSS and JS',
+        website: true,
+        gitHubUrl: 'https://github.com/thaysgama/dio-netflix-clone',
+        websiteUrl: 'https://thaysgama.github.io/dio-netflix-clone/',
+        bg: 'gradient-2'
+    },{
+        id: 108,
+        name: 'Genius Game',
+        tag: 'Individual Work',
+        tools: 'Html, CSS and JS',
+        website:true,
+        gitHubUrl: 'https://github.com/thaysgama/dio-jogo-memoria-genius',
+        websiteUrl: 'https://thaysgama.github.io/dio-jogo-memoria-genius/',
+        bg:'gradient-3'
+    }, {
+        id: 109,
+        name: 'Landing Page Instagram',
+        tag: 'Individual Work',
+        tools: 'Html and CSS',
+        website:true,
+        gitHubUrl: 'https://github.com/thaysgama/dio-landing-page-instagram',
+        websiteUrl: 'https://thaysgama.github.io/dio-landing-page-instagram/',
+        bg: 'gradient-1'
     }
 ]
 

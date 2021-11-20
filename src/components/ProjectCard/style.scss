@@ -12,11 +12,12 @@
     border-radius: 0;
     color: $white;
     opacity: .8;
-    transition: all .2s ease-out;
+    transition: all .4s ease-out;
     text-align: center;
+    border: 1px solid $white;
     &:hover{
         opacity: 1;
-        transform: scale(1.02);
+        transform: scale(1.03);
         z-index: 2;
     }
 }
