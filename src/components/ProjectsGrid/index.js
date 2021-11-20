@@ -94,7 +94,7 @@ function ProjectsGrid(){
             <h2> 
                 Projects
             </h2>
-            <div className="row row-cols-1 row-cols-md-3">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
                 {
                     projectsData.map(item =>{
                         return (
