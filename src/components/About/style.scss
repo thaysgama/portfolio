@@ -53,19 +53,33 @@
         p{
             font-size: 1rem;
         }
+
+        a{
+            color: $white;
+        }
     
         i{
             font-size: 3.5rem;
-            padding: 2rem;
+            padding: 0.5rem;
             color: $white;
             &:hover{
                 color: $gray;
             }
         }
+
+        svg{
+            fill: $white;
+            padding: 0.5rem;
+            &:hover{
+                fill:$gray;
+            }
+        }
+
+       
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .about-container .about-text{
         padding-left: 13rem;
    }

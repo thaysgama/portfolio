@@ -17,7 +17,7 @@
     border: 1px solid $white;
     &:hover{
         opacity: 1;
-        transform: scale(1.03);
+        // transform: scale(1.03);
         z-index: 2;
     }
 }
@@ -45,16 +45,16 @@
 }
 
 .card-link{
+    background: linear-gradient(to right, $white 50%, transparent 50%);
+    background-size: 210% 100%;
+    background-position: right center;
+    transition: all .5s ease-out;
     color: $white;
-    border: $white solid 2px;
+    border: 2px solid $white  ;
     border-radius: 0.25rem;
     padding: 0.5rem 2rem;
-    background: linear-gradient(to right, $white 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
     &:hover {
-        background-position: left bottom;
+        background-position: left center;
         color: $primary-color;
     }
 }
